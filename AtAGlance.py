@@ -23,7 +23,7 @@ for i in story[3:7]:
     print(i.text)
 print()
 #Weather
-url="https://weather.com/weather/today/l/af7ef50ebd6650aa5396e0b2a298c006b1cb34373bb4aecf4f1866711a20d503"
+url="Your weather channel website here"
 page=rp.get(url,headers=headers)
 s=soup(page.content,"html.parser")
 card = s.find('div',class_="today_nowcard-section today_nowcard-condition")
